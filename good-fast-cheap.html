@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>good</title>
+</head>
+<body>
+<input type="checkbox" onclick="sothuhat()" id= "s1"  >Good
+<br />
+<input type="checkbox" onclick="sothuhai()" id= 's2'>Fast
+<br />
+<input type="checkbox" onclick="hau()" id= 's3'>Cheap
+<br />
+<script>
+
+
+  let a = document.getElementById('s1');
+  let b = document.getElementById('s2');
+  let c = document.getElementById('s3');
+
+function sothuhat() {
+    if (a.checked&&b.checked) {
+
+        document.getElementById('s3').checked= false ; }
+  }
+  function sothuhai() {if(b.checked&&c.checked) {
+      document.getElementById('s1').checked =  false}
+  }
+  function hau() {
+      if (a.checked && c.checked) {
+          document.getElementById('s2').checked = false
+      }
+  }
+/*function sothuhat() {
+    if (a.checked) {
+        if (b.checked) {
+            document.getElementById('s3').checked = false
+        } else (document.getElementById('s2').checked = false)
+    } else {
+        document.getElementById('s2').checked = true
+        document.getElementById('s3').checked = true
+    }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
